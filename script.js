@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:3000/api';
+const API_BASE_URL = 'https://livepoll-back.vercel.app/api';
 let socket = null;
 let currentUser = null;
 let activePolls = [];
@@ -55,7 +55,7 @@ function playVoteSound() {
 
 function initWebSocket() {
     try {
-        socket = io('http://localhost:3000');
+        socket = io('https://livepoll-back.vercel.app');
 
         socket.on('connect', () => {
             console.log('WebSocket подключен');
