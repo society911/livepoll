@@ -55,7 +55,7 @@ function playVoteSound() {
 
 function initWebSocket() {
     try {
-        socket = io('https://livepoll-back.vercel.app/api');
+        socket = io('https://livepoll-back.vercel.app');
 
         socket.on('connect', () => {
             console.log('WebSocket подключен');
