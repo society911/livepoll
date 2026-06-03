@@ -1,5 +1,5 @@
 if (typeof API_BASE_URL === 'undefined') {
-    window.API_BASE_URL = 'http://localhost:3000/api';
+    window.API_BASE_URL = 'https://livepoll-back.vercel.app/api';
 }
 
 window.togglePollStatus = async function(pollId) {
